@@ -234,7 +234,30 @@ Follow the instructions in the comments to provide a proper definition of `xs`,
 then rerun the command above to generate a markdown table of runtimes.
 Copy/paste the table into the README file below this line.
 
-<!-- add the table here -->
+|    x    |      timsort      |   merge_sorted    |   quick_sorted    |
+| ------- | ----------------- | ----------------- | ----------------- |
+|    1    | 3.684e-06 seconds | 3.275e-06 seconds | 2.835e-06 seconds |
+|    2    | 2.254e-06 seconds | 9.578e-06 seconds | 1.051e-05 seconds |
+|    4    | 2.325e-06 seconds | 1.563e-05 seconds | 1.709e-05 seconds |
+|    8    | 3.189e-06 seconds | 3.648e-05 seconds | 3.828e-05 seconds |
+|   16    | 4.698e-06 seconds | 7.688e-05 seconds | 8.176e-05 seconds |
+|   32    | 7.641e-06 seconds | 1.718e-04 seconds | 1.640e-04 seconds |
+|   64    | 1.596e-05 seconds | 3.773e-04 seconds | 2.623e-03 seconds |
+|   128   | 2.629e-05 seconds | 8.047e-04 seconds | 9.744e-04 seconds |
+|   256   | 5.819e-05 seconds | 1.868e-03 seconds | 2.315e-03 seconds |
+|   512   | 1.215e-04 seconds | 2.659e-03 seconds | 3.539e-03 seconds |
+|  1024   | 2.482e-04 seconds | 7.576e-03 seconds | 1.047e-02 seconds |
+|  2048   | 6.703e-04 seconds | 1.926e-02 seconds | 2.474e-02 seconds |
+|  4096   | 1.470e-03 seconds | 4.018e-02 seconds | 3.349e-02 seconds |
+|  8192   | 3.046e-03 seconds | 9.138e-02 seconds | 1.218e-01 seconds |
+|  16384  | 6.552e-03 seconds | 1.966e-01 seconds | 2.537e-01 seconds |
+|  32768  | 1.554e-02 seconds | 4.270e-01 seconds | 4.586e-01 seconds |
+|  65536  | 3.945e-02 seconds | 8.346e-01 seconds | 1.113e+00 seconds |
+| 131072  | 7.962e-02 seconds | 1.835e+00 seconds | 2.281e+00 seconds |
+| 262144  | 1.932e-01 seconds | 4.025e+00 seconds | 4.821e+00 seconds |
+| 524288  | 3.824e-01 seconds | 8.024e+00 seconds | 1.087e+01 seconds |
+| 1048576 | 9.331e-01 seconds | 1.748e+01 seconds | 2.387e+01 seconds |
+| 2097152 | 2.156e+00 seconds | 3.793e+01 seconds | 5.148e+01 seconds |
 
 You should notice that the built-in `sorted` function ran much faster on this input,
 but your `merge_sorted` and `quick_sorted` functions have essentially the same runtimes.
